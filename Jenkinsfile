@@ -10,6 +10,7 @@ pipeline {
             steps {
                 sh 'npm install' 
                 sh 'ls' // Cette ligne exécute "ls helloworld" dans le répertoire de travail
+                sh 'npm run build'
             }
         }
     }
