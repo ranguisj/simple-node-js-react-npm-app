@@ -9,7 +9,7 @@ pipeline {
         stage('Build') { 
             steps {
                 sh 'npm install' 
-                sh 'ls helloworld' // Cette ligne exécute "ls helloworld" dans le répertoire de travail
+                sh 'ls' // Cette ligne exécute "ls helloworld" dans le répertoire de travail
             }
         }
     }
