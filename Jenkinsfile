@@ -21,7 +21,8 @@ pipeline {
 
     stage('Deploy') {
       steps {
-        sh 'npm install -g firebase-tools'
+        sh '''ls
+sudo npm install -g firebase-tools'''
       }
     }
 
