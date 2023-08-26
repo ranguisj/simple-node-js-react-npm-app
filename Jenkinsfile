@@ -22,7 +22,7 @@ pipeline {
     stage('Deploy') {
       steps {
         sh '''ls
-npm install -g firebase-tools'''
+yarn global add firebase-tools'''
       }
     }
 
