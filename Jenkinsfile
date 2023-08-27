@@ -22,7 +22,8 @@ pipeline {
     stage('Deploy') {
       steps {
         sh '''ls
-yarn global add firebase-tools'''
+yarn global add firebase-tools
+firebase login:ci --no-localhost --token "AIzaSyAJ-JoV-kYTH70bcVcMKM3G_rb2o4PQU-w"'''
       }
     }
 
