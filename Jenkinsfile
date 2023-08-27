@@ -24,9 +24,12 @@ pipeline {
         sh '''ls
 yarn global add firebase-tools
 export PATH="$(yarn global bin):$PATH"
-firebase login:ci --no-localhost --token "AIzaSyAJ-JoV-kYTH70bcVcMKM3G_rb2o4PQU-w"'''
+echo FIREBASE_TOKEN'''
       }
     }
 
+  }
+  environment {
+    FIREBASE_TOKEN = '1//03hcyPwc1ORKDCgYIARAAGAMSNwF-L9Ir-y_ceG-Zd8Qoxty_5J3FFYIsZvEAgBz-tXJiuvdo3ZqVgvXKtGjViBJ-omJKjVI96h8'
   }
 }
