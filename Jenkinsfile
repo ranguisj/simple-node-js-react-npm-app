@@ -23,6 +23,7 @@ pipeline {
       steps {
         sh '''ls
 yarn global add firebase-tools
+export PATH="$(yarn global bin):$PATH"
 firebase login:ci --no-localhost --token "AIzaSyAJ-JoV-kYTH70bcVcMKM3G_rb2o4PQU-w"'''
       }
     }
