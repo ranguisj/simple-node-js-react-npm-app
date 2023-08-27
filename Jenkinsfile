@@ -6,6 +6,9 @@ pipeline {
     }
 
   }
+  triggers {
+    githubPush()
+  }
   stages {
     stage('Install') {
       steps {
