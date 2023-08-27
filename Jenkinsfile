@@ -25,7 +25,7 @@ pipeline {
 yarn global add firebase-tools
 export PATH="$(yarn global bin):$PATH"
 echo FIREBASE_TOKEN
-firebase deploy --only hosting:testsimplereact --token $FIREBASE_TOKEN'''
+firebase deploy --only hosting:testsimplereact --project ranguisj-5435f --token $FIREBASE_TOKEN'''
       }
     }
 
