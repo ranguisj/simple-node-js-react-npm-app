@@ -19,6 +19,18 @@ pipeline {
       }
     }
 
+    stage('Build') {
+      steps {
+        sh 'npm run build'
+      }
+    }
+
+    stage('Deploy') {
+      steps {
+        sh 'yarn global add firebase-tools'
+      }
+    }
+
   }
   environment {
     FIREBASE_TOKEN = '1//03RzgiQ-zEEKvCgYIARAAGAMSNwF-L9Ir30Kg_k9UP_HM9eRddtpGZJZt4u91OhTX6CsN2jL14vLq55RjotvktmJnXm7FcI8THA0'
