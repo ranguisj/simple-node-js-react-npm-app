@@ -27,7 +27,9 @@ pipeline {
 
     stage('Deploy') {
       steps {
-        sh 'yarn global add firebase-tools'
+        sh '''yarn global add firebase-tools
+export PATH="$(yarn global bin):$PATH"
+echo FIREBASE_TOKEN'''
       }
     }
 
