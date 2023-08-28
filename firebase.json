@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "testsimplereact",
+    "site": "briefcicd",
     "public": "build",
     "ignore": [
       "firebase.json",
