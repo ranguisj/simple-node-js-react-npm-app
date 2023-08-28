@@ -30,7 +30,7 @@ pipeline {
         sh '''yarn global add firebase-tools
 export PATH="$(yarn global bin):$PATH"
 echo FIREBASE_TOKEN
-firebase deploy --only hosting:briefcicd --project test --token $FIREBASE_TOKEN'''
+firebase deploy --only hosting:briefcicd --project test-f9ea8 --token $FIREBASE_TOKEN'''
       }
     }
 
